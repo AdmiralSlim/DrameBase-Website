@@ -19,9 +19,50 @@
   font-family: 'GT Walsheim Pro', -apple-system, BlinkMacSystemFont, Segoe UI,
     Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
     sans-serif;
+  -webkit-tap-highlight-color: transparent;
+
   /* outline: 1px solid red; */
 }
 
+
+/* mobile menu */
+.mobile__menu {
+  background: #f8fafc;
+  width: 100%;
+  height: 0;
+  transition: height 0.4s ease;
+  clear: both;
+  z-index: 999;
+  /* position: relative; */
+  overflow-y: auto;
+}
+
+.mobile__menu::-webkit-scrollbar {
+  width: 0;
+}
+.mobile__menu::-webkit-scrollbar-track {
+  background-color: (rgb(48, 47, 47) 173, 173);
+}
+.mobile__menu::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 1rem;
+  width: 0.1rem;
+  background-color: rgb(251, 235, 255);
+}
+
+.mobile__menu.open {
+  height: 300px;
+}
+
+
+/* header */
+header{
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+
+
+/* default styles */
 .shadow--main {
   box-shadow: 0 12px 32px -12px rgb(12 22 44 / 32%);
 }
@@ -87,33 +128,29 @@ button:hover .arrow-link {
   /* background: rgba(145,6,154,255); */
 }
 
-
-
 /* MEET THE TEAM */
-.meet_team .square{
-    width: 250px;
-    height: 200px;
-    /* width: 323px;
+.meet_team .square {
+  width: 250px;
+  height: 200px;
+  /* width: 323px;
     height: 271px; */
 
-    border-radius: 16px;
-    position: relative;
-    display: block;
+  border-radius: 16px;
+  position: relative;
+  display: block;
 
-    background: #FCE4D3;
-    object-fit: cover;
-    overflow: hidden;
-
+  background: #fce4d3;
+  object-fit: cover;
+  overflow: hidden;
 }
-.meet_team .square:hover img{
-    transform: scale(1.2);
-    transition: all 1s ease;
-
+.meet_team .square:hover img {
+  transform: scale(1.2);
+  transition: all 1s ease;
 }
-.meet_team .square img{
-    border-radius: 16px;
-    object-fit: cover;
-    transition: all 1s ease;
+.meet_team .square img {
+  border-radius: 16px;
+  object-fit: cover;
+  transition: all 1s ease;
 }
 
 /* .meet__team h5{
@@ -128,9 +165,6 @@ button:hover .arrow-link {
     color: #6D747D;
 } */
 
-
-
-
 /* footer */
 
 .top-footer {
@@ -144,4 +178,24 @@ button:hover .arrow-link {
 
 footer .social-icon i {
   font-size: 22px;
+}
+
+footer .footer-link span {
+  height: 2px;
+  width: 0px;
+  border-radius: 4px;
+  background: #890493;
+  position: absolute;
+  bottom: 0;
+  /* left: 0; */
+  /* transform: scale(0); */
+  content: '';
+  transition: all 400ms ease-in-out;
+}
+footer .footer-link:hover span {
+  /* transform: scale(1); */
+  width: 50px;
+
+  /* width: 100%; */
+  transition: all 400ms ease-in-out;
 }
