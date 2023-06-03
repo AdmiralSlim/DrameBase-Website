@@ -17,7 +17,7 @@
     <title>Document</title>
   </head>
   <body>
-    <nav class="bg-indigo-400 shadow-header sticky top-0 z-50">
+    <nav class="bg-indigo-100 shadow-header sticky top-0 z-50">
       <div class="container mx-auto max-w-7xl">
         <nav class="flex flex-wrap items-center justify-between px-6 py-4">
           <div class="lg:order-1 w-auto lg:text-center">
@@ -30,7 +30,7 @@
           </div>
           <div class="block lg:hidden">
             <button
-              class="navbar-burger flex items-center py-2 px-3 text-indigo-500 rounded"
+              class="navbar-burger btn flex items-center py-2 px-3 text-indigo-500 rounded"
             >
               <svg
                 class="fill-current h-5 w-6"
@@ -45,7 +45,7 @@
           <div
             class="hidden lg:order-2 lg:block w-full lg:w-auto lg:text-center"
           >
-            <div class="navbar-menu flex items-center justify-end gap-6">
+            <div class="navbar-menu flex items-center justify-end gap-4">
               <a
                 href="/"
                 class="block lg:inline-block mt-4 lg:mt-0 text-blue-900 hover:text-indigo-600 px-5"
@@ -59,13 +59,19 @@
               >
                 Why us?
               </a>
+              <a
+                href="/"
+                class="block lg:inline-block mt-4 lg:mt-0 text-blue-900 hover:text-indigo-600 px-5"
+              >
+                Features
+              </a>
             </div>
           </div>
 
           <button
-            class="lg:order-3 rounded-lg px-5 py-2 text-md border border-[#046ED1] text-[#046ED1] flex items-center"
+            class="btn hidden md:block lg:order-3 rounded-lg px-5 py-2 text-md border border-[#046ED1] text-[#046ED1] flex items-center"
           >
-            Login
+            Login <i class="fa fa-arrow-right arrow-link"></i>
           </button>
         </nav>
       </div>
@@ -93,7 +99,7 @@
               class="flex flex items-center h-full w-full justify-start gap-2 flex-wrap items-start"
             >
               <button
-                class="rounded-lg flex items-center px-5 py-2 text-md bg-[#046ED1] text-white border border-[#046ED1] h-14"
+                class="btn rounded-lg flex items-center px-5 py-2 text-md bg-[#046ED1] text-white border border-[#046ED1] h-14"
               >
                 <span class="flex items-center gap-3 font-semibold">
                   Sign Up for Free <i class="fa fa-arrow-right arrow-link"></i
@@ -103,11 +109,28 @@
               <div class="flex font-semibold">
                 <a
                   href=""
-                  class="rounded-lg px-5 py-2 text-md border border-[#046ED1] text-[#046ED1] h-14 flex items-center"
+                  class="btn rounded-lg px-5 py-2 text-md border border-[#046ED1] text-[#046ED1] h-14 flex items-center"
                 >
                   Download the app
                 </a>
               </div>
+            </div>
+
+            <div
+              class="flex flex items-center h-full w-full justify-start gap-1 flex-wrap items-start mt-3"
+            >
+              <button class="flex items-center h-14 w-1/4">
+                <img
+                  src="/images/google-play.png"
+                  class="h-full w-full object-cover"
+                />
+              </button>
+              <button class="flex items-center h-14 w-1/4">
+                <img
+                  src="/images/apple.png"
+                  class="h-full w-full object-cover"
+                />
+              </button>
             </div>
           </div>
           <div class="hidden md:block relative"></div>
@@ -116,7 +139,7 @@
     </header>
 
     <section>
-      <div class="container mx-auto px-6 max-w-6xl bg-[#FCE6AF] relative">
+      <div class="container mx-auto px-6 max-w-6xl relative">
         <div
           class="py-14 px-4 md:px-12 lg:px-20 flex items-center justify-center flex-col"
         >
@@ -137,6 +160,151 @@
               doloribus. Minus architecto fuga quo et qui, error veniam
               perferendis.
             </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features_section">
+      <div class="container mx-auto px-3 lg:px-6 max-w-7xl w-full">
+        <div class="py-14">
+          <div class="mb-9">
+            <h2
+              class="text-left text-[#1E2428] font-semibold font-['Recoleta'] text-[44px]"
+            >
+              Featured content
+            </h2>
+            <p class="text-[22px] font-normal">
+              Lorem ipsum dolor sit amet consectetur.
+            </p>
+          </div>
+
+          <div>
+            <div
+              class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4 gap-y-6 items-center justify-center"
+            >
+              <div class="">
+                <div
+                  class="flex items-center justify-center transform transition duration-500 lg:hover:scale-110 rounded-full h-52 overflow-hidden content_img_box"
+                >
+                  <!-- <div class="square h-full  w-full"> -->
+                  <img
+                    src="/images/5.svg"
+                    class="object-contain h-full w-full"
+                  />
+                  <!-- </div> -->
+                </div>
+                <div class="text-center mt-4">
+                  <h5>Lorem, ipsum dolor.</h5>
+                </div>
+              </div>
+
+              <div class="">
+                <div
+                  class="flex items-center justify-center transform transition duration-500 lg:hover:scale-110 rounded-full h-52 overflow-hidden content_img_box"
+                >
+                  <!-- <div class="square h-full  w-full"> -->
+                  <img
+                    src="/images/6.svg"
+                    class="object-contain h-full w-full"
+                  />
+                  <!-- </div> -->
+                </div>
+                <div class="text-center mt-4">
+                  <h5>Lorem, ipsum dolor.</h5>
+                </div>
+              </div>
+              <div class="">
+                <div
+                  class="flex items-center justify-center transform transition duration-500 lg:hover:scale-110 rounded-full h-52 overflow-hidden content_img_box"
+                >
+                  <!-- <div class="square h-full  w-full"> -->
+                  <img
+                    src="/images/7.svg"
+                    class="object-contain h-full w-full"
+                  />
+                  <!-- </div> -->
+                </div>
+                <div class="text-center mt-4">
+                  <h5>Lorem, ipsum dolor.</h5>
+                </div>
+              </div>
+              <div class="">
+                <div
+                  class="flex items-center justify-center transform transition duration-500 lg:hover:scale-110 rounded-full h-52 overflow-hidden content_img_box"
+                >
+                  <!-- <div class="square h-full  w-full"> -->
+                  <img
+                    src="/images/8.svg"
+                    class="object-contain h-full w-full"
+                  />
+                  <!-- </div> -->
+                </div>
+                <div class="text-center mt-4">
+                  <h5>Lorem, ipsum dolor.</h5>
+                </div>
+              </div>
+              <div class="">
+                <div
+                  class="flex items-center justify-center transform transition duration-500 lg:hover:scale-110 rounded-full h-52 overflow-hidden content_img_box"
+                >
+                  <!-- <div class="square h-full  w-full"> -->
+                  <img
+                    src="/images/9.svg"
+                    class="object-contain h-full w-full"
+                  />
+                  <!-- </div> -->
+                </div>
+                <div class="text-center mt-4">
+                  <h5>Lorem, ipsum dolor.</h5>
+                </div>
+              </div>
+              <div class="">
+                <div
+                  class="flex items-center justify-center transform transition duration-500 lg:hover:scale-110 rounded-full h-52 overflow-hidden content_img_box"
+                >
+                  <!-- <div class="square h-full  w-full"> -->
+                  <img
+                    src="/images/10.svg"
+                    class="object-contain h-full w-full"
+                  />
+                  <!-- </div> -->
+                </div>
+                <div class="text-center mt-4">
+                  <h5>Lorem, ipsum dolor.</h5>
+                </div>
+              </div>
+              <div class="">
+                <div
+                  class="flex items-center justify-center transform transition duration-500 lg:hover:scale-110 rounded-full h-52 overflow-hidden content_img_box"
+                >
+                  <!-- <div class="square h-full  w-full"> -->
+                  <img
+                    src="/images/11.svg"
+                    class="object-contain h-full w-full"
+                  />
+                  <!-- </div> -->
+                </div>
+                <div class="text-center mt-4">
+                  <h5>Lorem, ipsum dolor.</h5>
+                </div>
+              </div>
+              <div class="">
+                <div
+                  class="flex items-center justify-center transform transition duration-500 lg:hover:scale-110 rounded-full h-52 overflow-hidden content_img_box"
+                >
+                  <!-- <div class="square h-full  w-full"> -->
+                  <img
+                    src="/images/12.svg"
+                    class="object-contain h-full w-full"
+                  />
+                  <!-- </div> -->
+                </div>
+                <div class="text-center mt-4">
+                  <h5>Lorem, ipsum dolor.</h5>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -190,96 +358,30 @@
       </div>
     </section>
 
-    <section class="features_section">
-      <div class="container mx-auto px-3 lg:px-6 max-w-7xl w-full">
-        <div class="py-14">
-          <div class="mb-9">
-            <h2
-              class="text-left text-[#1E2428] font-semibold font-['Recoleta'] text-[44px]"
-            >
-              Featured content
-            </h2>
-            <p class="text-[22px] font-normal">
-              Lorem ipsum dolor sit amet consectetur.
-            </p>
-          </div>
-
-          <div>
-            <div
-              class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4 gap-y-6"
-            >
-              <div class="">
-                <div
-                  class="mb-4 flex items-center justify-center transform transition duration-500 hover:scale-110"
-                >
-                  <div
-                    class="square rounded-full h-72 w-full bg-rose-400"
-                  ></div>
-                </div>
-                <div class="text-center">
-                  <h5>Lorem, ipsum dolor.</h5>
-                </div>
-              </div>
-              <div class="">
-                <div
-                  class="mb-4 flex items-center justify-center transform transition duration-500 hover:scale-110"
-                >
-                  <div
-                    class="square rounded-full h-72 w-full bg-rose-400"
-                  ></div>
-                </div>
-                <div class="text-center">
-                  <h5>Lorem, ipsum dolor.</h5>
-                </div>
-              </div>
-              <div class="">
-                <div
-                  class="mb-4 flex items-center justify-center transform transition duration-500 hover:scale-110"
-                >
-                  <div
-                    class="square rounded-full h-72 w-full bg-rose-400"
-                  ></div>
-                </div>
-                <div class="text-center">
-                  <h5>Lorem, ipsum dolor.</h5>
-                </div>
-              </div>
-              <div class="">
-                <div
-                  class="mb-4 flex items-center justify-center transform transition duration-500 hover:scale-110"
-                >
-                  <div
-                    class="square rounded-full h-72 w-full bg-rose-400"
-                  ></div>
-                </div>
-                <div class="text-center">
-                  <h5>Lorem, ipsum dolor.</h5>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section>
+    <section class="relative">
+      <div class="overlay"></div>
       <div class="container mx-auto px-3 lg:px-6 max-w-7xl w-full">
         <div class="grid grid-cols-1 md:grid-cols-2 py-14 gap-10">
           <div class="flex items-center justify-start">
-            <div class="features-img">
-              <img src="/images/carbon-credit-nft.jpeg" />
+            <div class="features-img rounded-lg shadow--main z-10">
+              <img
+                src="/images/centre-for-ageing-better.jpg"
+                class="object-cover rounded-lg"
+              />
             </div>
           </div>
-          <div>
-            <div class="pl-0 md:pl-0 lg:pl-16">
-              <p class="mb-4 text-[#351F0F]">Lorem ipsum dolor sit.</p>
-              <h3 class="mb-3 text-[28px]">The way music should be heard</h3>
+          <div class="flex items-center justify-center h-full z-10">
+            <div class="text-white">
+              <p class="mb-4 text-lg">Lorem ipsum dolor sit.</p>
+              <h3 class="mb-3 text-[54px]">
+                The way music should be heard Lorem ipsum dolor sit amet.
+              </h3>
               <div class="flex font-semibold">
                 <button
                   href=""
-                  class="rounded-lg px-5 py-2 text-md border border-[#046ED1] text-[#046ED1] h-14 flex items-center"
+                  class="btn rounded-lg px-5 py-2 text-md border border-[#fff] text-[#890493] h-14 flex items-center"
                 >
-                  Start today
+                  Start today <i class="fa fa-arrow-right arrow-link"></i>
                 </button>
               </div>
             </div>
@@ -288,7 +390,7 @@
       </div>
     </section>
 
-    <section class="features_section">
+    <section class="">
       <div class="container mx-auto px-3 lg:px-6 max-w-7xl w-full">
         <div class="py-14">
           <div class="mb-9">
@@ -308,7 +410,7 @@
             >
               <div>
                 <div
-                  class="mb-4 flex items-center justify-center transform transition duration-500 hover:scale-110 shadow--main overflow"
+                  class="mb-4 flex items-center justify-center transform transition duration-500 lg:hover:scale-110 shadow--main overflow"
                 >
                   <div class="rounded-lg h-72 w-full">
                     <img
@@ -324,7 +426,7 @@
 
               <div>
                 <div
-                  class="mb-4 flex items-center justify-center transform transition duration-500 hover:scale-110 shadow--main overflow"
+                  class="mb-4 flex items-center justify-center transform transition duration-500 lg:hover:scale-110 shadow--main overflow"
                 >
                   <div class="rounded-lg h-72 w-full">
                     <img
@@ -340,7 +442,7 @@
 
               <div>
                 <div
-                  class="mb-4 flex items-center justify-center transform transition duration-500 hover:scale-110 shadow--main overflow"
+                  class="mb-4 flex items-center justify-center transform transition duration-500 lg:hover:scale-110 shadow--main overflow"
                 >
                   <div class="rounded-lg h-72 w-full">
                     <img
@@ -355,7 +457,7 @@
               </div>
               <div>
                 <div
-                  class="mb-4 flex items-center justify-center transform transition duration-500 hover:scale-110 shadow--main overflow"
+                  class="mb-4 flex items-center justify-center transform transition duration-500 lg:hover:scale-110 shadow--main overflow"
                 >
                   <div class="rounded-lg h-72 w-full">
                     <img
@@ -374,9 +476,9 @@
       </div>
     </section>
 
-    <div class="container mx-auto px-6 max-w-md relative text-center">
+    <div class="container mx-auto px-6 max-w-lg relative text-center">
       <div>
-        <h2 class="text-[22px] font-normal">
+        <h2 class="text-[45px] font-normal text-gray-500">
           A modern streaming service designed with artists in mind
         </h2>
       </div>
@@ -389,7 +491,7 @@
             <h2
               class="text-left text-[#1E2428] font-semibold font-['Recoleta'] text-[44px]"
             >
-              JOin the community
+              Join the community
             </h2>
             <p class="text-[22px] font-normal">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut,
@@ -403,17 +505,61 @@
             >
               <div class="">
                 <div
-                  class="mb-4 flex items-center justify-center transform transition duration-500 hover:scale-110"
+                  class="mb-6 flex items-center justify-center transition duration-200 h-72 shadow--main"
                 >
-                  <div class="square rounded-lg h-72 w-full bg-rose-400"></div>
+                  <div
+                    class="rounded-lg h-full w-full bg-[#0501f6] flex items-center justify-center px-4 py-3 text-white"
+                  >
+                    <div class="flex flex-col gap-4 px-4 text-center">
+                      <h4 class="text-4xl">Remix Contests</h4>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Cum quisquam voluptates temporibus. Laudantium quasi
+                        quod, suscipit hic repellendus porro cupiditate.
+                      </p>
+
+                      <div class="text-center flex items-center justify-center">
+                        <button
+                          href=""
+                          class="btn rounded-lg px-5 py-3 text-md border border-[#fff] text-[#fff] flex items-center"
+                        >
+                          Start today
+                          <i class="fa fa-arrow-right arrow-link"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div class="text-center">
                   <h5>Lorem, ipsum dolor.</h5>
                 </div>
               </div>
               <div class="">
-                <div class="mb-4 flex items-center justify-center">
-                  <div class="square rounded-lg h-72 w-full bg-rose-400"></div>
+                <div
+                  class="mb-6 flex items-center justify-center transition duration-200 h-72 shadow--main"
+                >
+                  <div
+                    class="rounded-lg h-full w-full bg-rose-400 flex items-center justify-center px-4 py-3 text-white"
+                  >
+                    <div class="flex flex-col gap-4 px-4 text-center">
+                      <h4 class="text-4xl">Remix Contests</h4>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Cum quisquam voluptates temporibus. Laudantium quasi
+                        quod, suscipit hic repellendus porro cupiditate.
+                      </p>
+
+                      <div class="text-center flex items-center justify-center">
+                        <button
+                          href=""
+                          class="btn rounded-lg px-5 py-3 text-md border border-[#fff] text-[#fff] flex items-center"
+                        >
+                          Start today
+                          <i class="fa fa-arrow-right arrow-link"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div class="text-center">
                   <h5>Lorem, ipsum dolor.</h5>
@@ -425,19 +571,25 @@
       </div>
     </section>
 
-    <div class="py-8 relative" style="background: url('/images/centre-for-ageing-better.jpg'); background-size: cover; background-position: center center;">
-        <div class="overlay"></div>
+    <div
+      class="py-16 relative text-white"
+      style="
+        /* background: url('/images/centre-for-ageing-better.jpg'); */
+        background-size: cover;
+        background-position: center center;
+        background-color: #010a13;
+      "
+    >
+      <div class="overlay"></div>
       <div
         class="flex items-center justify-between w-full py-6 px-6 max-w-7xl mx-auto container flex-wrap social_cta gap-x-2 gap-y-5"
       >
         <div class="">
-          <h1 class="text-3xl text-[#351F0F] mb-3">
-            Lorem ipsum dolor sit amet.
-          </h1>
+          <h1 class="text-3xl text-[#fff] mb-3">Lorem ipsum dolor sit amet.</h1>
           <button
-            class="rounded-lg flex items-center px-5 py-2 text-sm bg-[#046ED1] text-white border border-[#046ED1] h-12"
+            class="btn rounded-lg flex items-center px-5 py-2 text-sm bg-[#046ED1] text-white border border-[#046ED1] h-12"
           >
-            Sign Up for Free
+            Sign Up for Free <i class="fa fa-arrow-right arrow-link"></i>
           </button>
         </div>
 
@@ -445,57 +597,15 @@
       </div>
     </div>
 
-    <footer>
+    <footer class="py-5">
       <div class="container mx-auto max-w-7xl w-full lg:px-6 px-3">
         <div class="top-footer py-5">
-          <div
-            class="flex items-center justify-between w-full flex-wrap social_cta gap-x-2 gap-y-5 py-4 border-[#dadddf] border-b"
-          >
-            <div class="grow">
-              <h1 class="text-3xl text-[#351F0F]">Logo</h1>
-            </div>
-
-            <div class="flex items-center gap-4">
-              <button
-                class="rounded-lg flex items-center px-5 py-2 text-sm bg-[#046ED1] text-white border border-[#046ED1] h-12"
-              >
-                <span class="flex font-semibold"> Sign Up for Free </span>
-              </button>
-            </div>
-          </div>
           <div class="py-5">
-            <div class="grid grids-cols-2 grid-cols-4 mb-4 mb-lg-0 text-lg">
-              <div>
-                <a
-                  href="/"
-                  class="footer-link rounded-circle p-3 d-flex align-items-center justify-content-center position-relative"
-                >
-                  Trending
-                  <span></span>
-                </a>
-              </div>
-              <div>
-                <a
-                  href="/"
-                  class="footer-link rounded-circle p-3 d-flex align-items-center justify-content-center position-relative"
-                >
-                  Explore
-                  <span></span>
-                </a>
-              </div>
-              <div>
-                <a
-                  href="/"
-                  class="footer-link rounded-circle p-3 d-flex align-items-center justify-content-center position-relative"
-                >
-                  Explore
-                  <span></span>
-                </a>
-              </div>
-              <div class="flex items-center justify-end">
-                <div
-                  class="inline-flex items-center justify-end  gap-2"
-                >
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 mb-4 mb-lg-0 text-lg gap-4">
+              <div class="grow col-span-1 lg:col-span-2">
+                <h1 class="text-3xl text-[#351F0F]">Logo</h1>
+
+                <div class="inline-flex items-center justify-start gap-2 mt-4">
                   <a href="" class="social-icon">
                     <i class="fab fa-github"></i>
                   </a>
@@ -509,6 +619,47 @@
                     <i class="fab fa-instagram"></i>
                   </a>
                 </div>
+              </div>
+
+              <div>
+                <ul>
+                  <li>
+                    <a
+                      href="/"
+                      class="footer-link rounded-circle p-3 d-flex align-items-center justify-content-center position-relative"
+                    >
+                      Trending
+                      <span></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/"
+                      class="footer-link rounded-circle p-3 d-flex align-items-center justify-content-center position-relative"
+                    >
+                      Blog
+                      <span></span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <a
+                  href="/"
+                  class="footer-link rounded-circle p-3 d-flex align-items-center justify-content-center position-relative"
+                >
+                  Explore
+                  <span></span>
+                </a>
+              </div>
+              <div>
+                <a
+                  href="/"
+                  class="footer-link rounded-circle p-3 d-flex align-items-center justify-content-center position-relative"
+                >
+                  Explore
+                  <span></span>
+                </a>
               </div>
             </div>
           </div>
