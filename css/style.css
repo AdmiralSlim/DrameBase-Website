@@ -87,6 +87,50 @@ button:hover .arrow-link {
   /* background: rgba(145,6,154,255); */
 }
 
+
+
+/* MEET THE TEAM */
+.meet_team .square{
+    width: 250px;
+    height: 200px;
+    /* width: 323px;
+    height: 271px; */
+
+    border-radius: 16px;
+    position: relative;
+    display: block;
+
+    background: #FCE4D3;
+    object-fit: cover;
+    overflow: hidden;
+
+}
+.meet_team .square:hover img{
+    transform: scale(1.2);
+    transition: all 1s ease;
+
+}
+.meet_team .square img{
+    border-radius: 16px;
+    object-fit: cover;
+    transition: all 1s ease;
+}
+
+/* .meet__team h5{
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 31px;
+    color: #3F3F3F;
+}
+.meet__team P{
+    font-size: 18px;
+    line-height: 31px;
+    color: #6D747D;
+} */
+
+
+
+
 /* footer */
 
 .top-footer {
